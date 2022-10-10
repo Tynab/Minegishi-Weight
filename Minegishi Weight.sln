@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Minegishi Weight", "Minegishi Weight\Minegishi Weight.vbproj", "{FC8D5A19-88DA-4A00-B897-D89AABA4891A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Minegishi Weight Setup", "Minegishi Weight Setup\Minegishi Weight Setup.vdproj", "{D863110C-A2DE-4E31-B793-59ED1A800367}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC8D5A19-88DA-4A00-B897-D89AABA4891A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8D5A19-88DA-4A00-B897-D89AABA4891A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8D5A19-88DA-4A00-B897-D89AABA4891A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8D5A19-88DA-4A00-B897-D89AABA4891A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D863110C-A2DE-4E31-B793-59ED1A800367}.Debug|Any CPU.ActiveCfg = Debug
+		{D863110C-A2DE-4E31-B793-59ED1A800367}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6B8D79A-32D6-47FC-BFB0-FEDE62613054}
+	EndGlobalSection
+EndGlobal
