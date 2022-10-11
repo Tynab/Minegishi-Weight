@@ -51,26 +51,26 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_E193F42B2EA647FDB94AE0CBB026C11A"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_F2DD8796802245E49C342FCD3E4F8EE6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_99EC51DA5204EFFE7882C35AB7F336C1"
+        "MsmKey" = "8:_F55BB6D38DD640B0884A96D0F689A90F"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_0FD3EC1AEE9D4755BC17176FF1C468E7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_99EC51DA5204EFFE7882C35AB7F336C1"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -123,6 +123,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -263,10 +271,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E193F42B2EA647FDB94AE0CBB026C11A"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F2DD8796802245E49C342FCD3E4F8EE6"
             {
-            "SourcePath" = "8:..\\res\\ic.ico"
-            "TargetName" = "8:ic.ico"
+            "SourcePath" = "8:..\\res\\BSNami.bmp"
+            "TargetName" = "8:BSNami.bmp"
             "Tag" = "8:"
             "Folder" = "8:_0725C1EE6D584CF78EBD60DF9AE47BBC"
             "Condition" = "8:"
@@ -283,10 +291,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F2DD8796802245E49C342FCD3E4F8EE6"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F55BB6D38DD640B0884A96D0F689A90F"
             {
-            "SourcePath" = "8:..\\res\\BSNami.bmp"
-            "TargetName" = "8:BSNami.bmp"
+            "SourcePath" = "8:..\\res\\ic.ico"
+            "TargetName" = "8:ic.ico"
             "Tag" = "8:"
             "Folder" = "8:_0725C1EE6D584CF78EBD60DF9AE47BBC"
             "Condition" = "8:"
@@ -377,7 +385,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_E193F42B2EA647FDB94AE0CBB026C11A"
+        "ARPPRODUCTICON" = "8:_F55BB6D38DD640B0884A96D0F689A90F"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -491,7 +499,7 @@
             "Target" = "8:_0FD3EC1AEE9D4755BC17176FF1C468E7"
             "Folder" = "8:_139CC44967BE4A3C90FDFBE64D35ABE8"
             "WorkingFolder" = "8:_0725C1EE6D584CF78EBD60DF9AE47BBC"
-            "Icon" = "8:_E193F42B2EA647FDB94AE0CBB026C11A"
+            "Icon" = "8:_F55BB6D38DD640B0884A96D0F689A90F"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DF3979AB0B2E4FA7A239FABDFD0EEB13"
@@ -505,7 +513,7 @@
             "Target" = "8:_0FD3EC1AEE9D4755BC17176FF1C468E7"
             "Folder" = "8:_F1FC11FCD7D54E5BBE723BF374A3B6E8"
             "WorkingFolder" = "8:_0725C1EE6D584CF78EBD60DF9AE47BBC"
-            "Icon" = "8:_E193F42B2EA647FDB94AE0CBB026C11A"
+            "Icon" = "8:_F55BB6D38DD640B0884A96D0F689A90F"
             "Feature" = "8:"
             }
         }
