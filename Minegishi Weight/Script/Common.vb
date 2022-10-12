@@ -33,7 +33,7 @@ Friend Module Common
     ''' <summary>
     ''' Check update.
     ''' </summary>
-    Friend Sub ChkUpd()
+    Private Sub ChkUpd()
         If IsNetAvail() AndAlso Not (New WebClient).DownloadString(My.Resources.link_ver).Contains(My.Resources.app_ver) Then
             Show($"「{My.Resources.app_true_name}」新しいバージョンが利用可能！", "更新", OK, Information)
             Run(New FrmUpdate)
@@ -187,7 +187,7 @@ Friend Module Common
     ''' <param name="xlApp">Excel application.</param>
     ''' <param name="cell">Cell address.</param>
     ''' <param name="value">Value.</param>
-    Friend Sub ModVal(xlApp As Microsoft.Office.Interop.Excel.Application, cell As String, value As Object)
+    Private Sub ModVal(xlApp As Microsoft.Office.Interop.Excel.Application, cell As String, value As Object)
         xlApp.Range(cell).Activate()
         xlApp.ActiveCell.FormulaR1C1 = value
         xlApp.ActiveCell.Interior.Color = RGB(0, 176, 240)
