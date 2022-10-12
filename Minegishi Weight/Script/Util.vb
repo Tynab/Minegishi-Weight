@@ -316,9 +316,9 @@ Friend Module Util
     ''' <param name="choosen">Selection.</param>
     Friend Sub Island(xlApp As Application, choosen As Double)
         If choosen = 1 Then
-            PubDVal(xlApp, "BA180", DtlDInp(vbTab & "390×910×390" & vbTab & vbTab & ": "))
-            PubDModVal(xlApp, "212", "390×690×390", 2.4, DtlDInpDesc(vbTab & "390×690×390 ", "[2.4]" & vbTab))
-            PubDVal(xlApp, "BA179", DtlDInp(vbTab & "390×455×390" & vbTab & vbTab & ": "))
+            PubDVal(xlApp, "BA180", DtlDInp(vbTab & "390×910×390: "))
+            PubDModVal(xlApp, "212", "390×690×390", 2.4, DtlDInp(vbTab & "390×690×390: "))
+            PubDVal(xlApp, "BA179", DtlDInp(vbTab & "390×455×390: "))
         End If
     End Sub
 
@@ -354,8 +354,8 @@ Friend Module Util
     ''' <param name="choosen">Selection.</param>
     Friend Sub Haunch(xlApp As Application, choosen As Double)
         If choosen = 1 Then
-            PubDVal(xlApp, "BA208", DtlDInp(vbTab & "H200" & vbTab & vbTab & ": "))
-            PubDModVal(xlApp, "207", "660×曲（H300）×660", 2.9, DtlDInpDesc(vbTab & "H300 ", "[2.9]" & vbTab))
+            PubDVal(xlApp, "BA208", DtlDInp(vbTab & "H200: "))
+            PubDModVal(xlApp, "207", "660×曲（H300）×660", 2.9, DtlDInp(vbTab & "H300: "))
         End If
     End Sub
 
@@ -377,16 +377,16 @@ Friend Module Util
     ''' </summary>
     ''' <param name="xlApp">Excel Application.</param>
     Friend Sub Hook(xlApp As Application)
-        PubDVal(xlApp, "BA192", DtlDInp(vbTab & "795×160" & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA204", DtlDInp(vbTab & "695×160" & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA189", DtlDInp(vbTab & "595×160" & vbTab & vbTab & ": "))
-        PubDModVal(xlApp, "205", "555×160　　フック付", 0.5, DtlDInpDesc(vbTab & "555×160 ", "[0.5]" & vbTab))
-        PubDVal(xlApp, "BA191", DtlDInp(vbTab & "455×160" & vbTab & vbTab & ": "))
-        PubDModVal(xlApp, "214", "360×160　　フック付", 0.4, DtlDInpDesc(vbTab & "360×160 ", "[0.4]" & vbTab))
-        PubDVal(xlApp, "BA206", DtlDInp(vbTab & "260×160" & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA190", DtlDInp(vbTab & "160×160" & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA188", DtlDInp(vbTab & "435×250" & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA218", DtlDInp(vbTab & "溶接 (220×85)" & vbTab & ": "))
+        PubDVal(xlApp, "BA192", DtlDInp(vbTab & "795×160: "))
+        PubDVal(xlApp, "BA204", DtlDInp(vbTab & "695×160: "))
+        PubDVal(xlApp, "BA189", DtlDInp(vbTab & "595×160: "))
+        PubDModVal(xlApp, "205", "555×160　　フック付", 0.5, DtlDInp(vbTab & "555×160: "))
+        PubDVal(xlApp, "BA191", DtlDInp(vbTab & "455×160: "))
+        PubDModVal(xlApp, "214", "360×160　　フック付", 0.4, DtlDInp(vbTab & "360×160: "))
+        PubDVal(xlApp, "BA206", DtlDInp(vbTab & "260×160: "))
+        PubDVal(xlApp, "BA190", DtlDInp(vbTab & "160×160: "))
+        PubDVal(xlApp, "BA188", DtlDInp(vbTab & "435×250: "))
+        PubDVal(xlApp, "BA218", DtlDInp(vbTab & "溶接 (220×85): "))
     End Sub
 
     ''' <summary>
@@ -396,11 +396,11 @@ Friend Module Util
     ''' <param name="choosen">Selection.</param>
     Friend Sub Corner3d(xlApp As Application, choosen As Double)
         If choosen = 1 Then
-            PubDModVal(xlApp, "202", "750×690×390", 3, DtlDInpDesc(vbTab & "右 (750×690×390) ", "[3.0]" & vbTab))
-            PubDModVal(xlApp, "203", "750×690×390", 3, DtlDInpDesc(vbTab & "左 (750×690×390) ", "[3.0]" & vbTab))
-            PubDVal(xlApp, "BA193", DtlDInp(vbTab & "右 (750×460×390)" & vbTab & ": "))
-            PubDVal(xlApp, "BA194", DtlDInp(vbTab & "左 (750×460×390)" & vbTab & ": "))
-            PubDModVal(xlApp, "209", "750×240×390", 2.3, DtlDInpDesc(vbTab & "右 (750×240×390) ", "[2.3]" & vbTab))
+            PubDModVal(xlApp, "202", "750×690×390", 3, DtlDInp(vbTab & "右 (750×690×390): "))
+            PubDModVal(xlApp, "203", "750×690×390", 3, DtlDInp(vbTab & "左 (750×690×390): "))
+            PubDVal(xlApp, "BA193", DtlDInp(vbTab & "右 (750×460×390): "))
+            PubDVal(xlApp, "BA194", DtlDInp(vbTab & "左 (750×460×390): "))
+            PubDModVal(xlApp, "209", "750×240×390", 2.3, DtlDInp(vbTab & "右 (750×240×390): "))
         End If
     End Sub
 
@@ -411,8 +411,8 @@ Friend Module Util
     ''' <param name="choosen">Selection.</param>
     Friend Sub Crank3d(xlApp As Application, choosen As Double)
         If choosen = 1 Then
-            PubDModVal(xlApp, "196", "（クランク３右）", "750×920×460×390", 4.1, DtlDInpDesc(vbTab & "右 (750×920×460×390) ", "[4.1]"))
-            PubDModVal(xlApp, "197", "（クランク３左）", "750×920×460×390", 4.1, DtlDInpDesc(vbTab & "左 (750×920×460×390) ", "[4.1]"))
+            PubDModVal(xlApp, "196", "（クランク３右）", "750×920×460×390", 4.1, DtlDInp(vbTab & "右 (750×920×460×390): "))
+            PubDModVal(xlApp, "197", "（クランク３左）", "750×920×460×390", 4.1, DtlDInp(vbTab & "左 (750×920×460×390): "))
         End If
     End Sub
 
@@ -423,9 +423,9 @@ Friend Module Util
     ''' <param name="choosen">Selection.</param>
     Friend Sub MType(xlApp As Application, choosen As Double)
         If choosen = 1 Then
-            PubDModVal(xlApp, "195", "（Ｍ型コーナー）", "390×460×460×390", 2.8, DtlDInpDesc(vbTab & "390×460×460×390 ", "[2.8]"))
-            PubDModVal(xlApp, "210", "（Ｍ型コーナー）", "390×460×690×390", 3.2, DtlDInpDesc(vbTab & "390×460×690×390 ", "[3.2]"))
-            PubDModVal(xlApp, "211", "（Ｍ型コーナー）", "390×690×690×390", 3.5, DtlDInpDesc(vbTab & "390×690×690×390 ", "[3.5]"))
+            PubDModVal(xlApp, "195", "（Ｍ型コーナー）", "390×460×460×390", 2.8, DtlDInp(vbTab & "390×460×460×390: "))
+            PubDModVal(xlApp, "210", "（Ｍ型コーナー）", "390×460×690×390", 3.2, DtlDInp(vbTab & "390×460×690×390: "))
+            PubDModVal(xlApp, "211", "（Ｍ型コーナー）", "390×690×690×390", 3.5, DtlDInp(vbTab & "390×690×690×390: "))
         End If
     End Sub
 
@@ -466,18 +466,18 @@ Friend Module Util
     ''' <param name="truck2Ton">2 ton truck.</param>
     Private Sub SlabBndgMain(xlApp As Application, truck2Ton As Double)
         If Not truck2Ton = 1 Then
-            PubDVal(xlApp, "BA115", DtlDInp(vbTab & "250×5250" & vbTab & vbTab & ": "))
-            PubDVal(xlApp, "BA116", DtlDInp(vbTab & "250×4750" & vbTab & vbTab & ": "))
+            PubDVal(xlApp, "BA115", DtlDInp(vbTab & "250×5250: "))
+            PubDVal(xlApp, "BA116", DtlDInp(vbTab & "250×4750: "))
         End If
-        PubDVal(xlApp, "BA117", DtlDInp(vbTab & "250×4250" & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA118", DtlDInp(vbTab & "250×3750" & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA119", DtlDInp(vbTab & "250×3250" & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA120", DtlDInp(vbTab & "250×2750" & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA121", DtlDInp(vbTab & "250×2250" & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA122", DtlDInp(vbTab & "250×1750" & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA123", DtlDInp(vbTab & "250×1250" & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA124", DtlDInp(vbTab & "250× 750" & vbTab & vbTab & ": "))
-        PubDModVal(xlApp, "125", "250×490×250", 1.1, DtlDInpDesc(vbTab & "250×490×250 ", "[1.1]" & vbTab))
+        PubDVal(xlApp, "BA117", DtlDInp(vbTab & "250×4250: "))
+        PubDVal(xlApp, "BA118", DtlDInp(vbTab & "250×3750: "))
+        PubDVal(xlApp, "BA119", DtlDInp(vbTab & "250×3250: "))
+        PubDVal(xlApp, "BA120", DtlDInp(vbTab & "250×2750: "))
+        PubDVal(xlApp, "BA121", DtlDInp(vbTab & "250×2250: "))
+        PubDVal(xlApp, "BA122", DtlDInp(vbTab & "250×1750: "))
+        PubDVal(xlApp, "BA123", DtlDInp(vbTab & "250×1250: "))
+        PubDVal(xlApp, "BA124", DtlDInp(vbTab & "250× 750: "))
+        PubDModVal(xlApp, "125", "250×490×250", 1.1, DtlDInp(vbTab & "250×490×250: "))
     End Sub
 
     ''' <summary>
