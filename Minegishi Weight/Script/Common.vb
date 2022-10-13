@@ -152,25 +152,6 @@ Friend Module Common
     End Function
 
     ''' <summary>
-    ''' Detail Yes/No question (1/0).
-    ''' </summary>
-    ''' <param name="caption">Caption.</param>
-    ''' <returns>Answer value.</returns>
-    Friend Function DtlYNQ(caption As String)
-        TitWarn(caption)
-        ForegroundColor = White
-        Dim value = Val(ReadLine)
-        If value <> 0 Or value <> 1 Then
-            Do Until value = 0 Or value = 1
-                TitWarn(caption)
-                ForegroundColor = Red
-                value = Val(ReadLine)
-            Loop
-        End If
-        Return value
-    End Function
-
-    ''' <summary>
     ''' Direct value to excel.
     ''' </summary>
     ''' <param name="xlApp">Excel application.</param>
@@ -194,26 +175,6 @@ Friend Module Common
     End Sub
 
     ''' <summary>
-    ''' Direct value to excel.
-    ''' </summary>
-    ''' <param name="xlApp">Excel application.</param>
-    ''' <param name="cell">Cell address.</param>
-    Friend Sub ClrVal(xlApp As Microsoft.Office.Interop.Excel.Application, cell As String)
-        xlApp.Range(cell).Activate()
-        xlApp.ActiveCell.MergeArea.ClearContents()
-    End Sub
-
-    ''' <summary>
-    ''' Publish string value to excel.
-    ''' </summary>
-    ''' <param name="xlApp">Excel application.</param>
-    ''' <param name="caption">Caption.</param>
-    ''' <param name="cell">Cell address.</param>
-    Friend Sub PubSVal(xlApp As Microsoft.Office.Interop.Excel.Application, caption As String, cell As String)
-        DctVal(xlApp, cell, DtlSInp(caption))
-    End Sub
-
-    ''' <summary>
     ''' Publish double value to excel.
     ''' </summary>
     ''' <param name="xlApp">Excel application.</param>
@@ -230,14 +191,12 @@ Friend Module Common
     ''' </summary>
     ''' <param name="xlApp">Excel application.</param>
     ''' <param name="row">Row number.</param>
-    ''' <param name="name">Name rebar.</param>
-    ''' <param name="weight">Weight rebar.</param>
+    ''' <param name="title">Title rebar.</param>
     ''' <param name="number">Number rebar.</param>
-    Friend Sub PubDModVal(xlApp As Microsoft.Office.Interop.Excel.Application, row As String, name As String, weight As Double, number As Double)
+    Friend Sub PubDModVal(xlApp As Microsoft.Office.Interop.Excel.Application, row As String, title As String, number As Double)
         If number > 0 Then
-            DctVal(xlApp, $"AH{row}", name)
-            ModVal(xlApp, $"CM{row}", weight)
-            DctVal(xlApp, $"BA{row}", number)
+            DctVal(xlApp, $"F{row}", title)
+            DctVal(xlApp, $"AG{row}", number)
         End If
     End Sub
 
@@ -246,16 +205,50 @@ Friend Module Common
     ''' </summary>
     ''' <param name="xlApp">Excel application.</param>
     ''' <param name="row">Row number.</param>
-    ''' <param name="title">Title rebar.</param>
     ''' <param name="name">Name rebar.</param>
     ''' <param name="weight">Weight rebar.</param>
     ''' <param name="number">Number rebar.</param>
-    Friend Sub PubDModVal(xlApp As Microsoft.Office.Interop.Excel.Application, row As String, title As String, name As String, weight As Double, number As Double)
+    Friend Sub PubDModVal(xlApp As Microsoft.Office.Interop.Excel.Application, row As String, name As String, weight As Double, number As Double)
         If number > 0 Then
-            DctVal(xlApp, $"X{row}", title)
-            DctVal(xlApp, $"AH{row}", name)
-            ModVal(xlApp, $"CM{row}", weight)
-            DctVal(xlApp, $"BA{row}", number)
+            DctVal(xlApp, $"L{row}", name)
+            ModVal(xlApp, $"AT{row}", weight)
+            DctVal(xlApp, $"AG{row}", number)
+        End If
+    End Sub
+
+    ''' <summary>
+    ''' Publish double mod value to excel.
+    ''' </summary>
+    ''' <param name="xlApp">Excel application.</param>
+    ''' <param name="row">Row number.</param>
+    ''' <param name="d">Diameter.</param>
+    ''' <param name="name">Name rebar.</param>
+    ''' <param name="weight">Weight rebar.</param>
+    ''' <param name="number">Number rebar.</param>
+    Friend Sub PubDModVal(xlApp As Microsoft.Office.Interop.Excel.Application, row As String, d As String, name As String, weight As Double, number As Double)
+        If number > 0 Then
+            DctVal(xlApp, $"C{row}", d)
+            DctVal(xlApp, $"L{row}", name)
+            ModVal(xlApp, $"AT{row}", weight)
+            DctVal(xlApp, $"AG{row}", number)
+        End If
+    End Sub
+
+    ''' <summary>
+    ''' Publish double mod value to excel.
+    ''' </summary>
+    ''' <param name="xlApp">Excel application.</param>
+    ''' <param name="row">Row number.</param>
+    ''' <param name="name">Name rebar.</param>
+    ''' <param name="weight">Weight rebar.</param>
+    ''' <param name="title">Title rebar.</param>
+    ''' <param name="number">Number rebar.</param>
+    Friend Sub PubDModVal(xlApp As Microsoft.Office.Interop.Excel.Application, row As String, name As String, weight As Double, title As String, number As Double)
+        If number > 0 Then
+            DctVal(xlApp, $"F{row}", title)
+            DctVal(xlApp, $"L{row}", name)
+            ModVal(xlApp, $"AT{row}", weight)
+            DctVal(xlApp, $"AG{row}", number)
         End If
     End Sub
 #End Region
@@ -374,17 +367,6 @@ Friend Module Common
     Friend Function HdrDInp(caption As String)
         Intro()
         Return DtlDInp(caption)
-    End Function
-
-    ''' <summary>
-    ''' Header double input description.
-    ''' </summary>
-    ''' <param name="caption">Caption.</param>
-    ''' <param name="description">Description.</param>
-    ''' <returns>Input value.</returns>
-    Friend Function HdrDInpDesc(caption As String, description As String)
-        Intro()
-        Return DtlDInpDesc(caption, description)
     End Function
 
     ''' <summary>
